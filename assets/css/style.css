@@ -1,25 +1,94 @@
-
-/* style.css - tone: cold (blue/gray) */
-:root{
-  --primary:#0d6efd; /* bootstrap primary blue */
-  --accent:#0a58ca;
-  --muted:#6c757d;
-  --bg:#f8fafc;
-  --card:#ffffff;
+.navbar {
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
-body{background:var(--bg); font-family:Inter, system-ui, Arial, sans-serif; color:#222}
-a{color:var(--primary);}
-.header-brand{font-weight:700; color:var(--primary); letter-spacing:0.6px;}
-.nav-link{color:#fff !important;}
-.hero{height:320px; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow:0 2px 6px rgba(0,0,0,0.35)}
-.card-img-top{height:200px; object-fit:cover;}
-.price{color:#0d6efd; font-weight:700;}
-.footer{background:#0b1a2b; color:#cfe6ff; padding:28px 0;}
-.container-narrow{max-width:1140px; margin:auto;}
-.product-grid .card{border: none; box-shadow: 0 6px 18px rgba(11,26,43,0.08);}
-.btn-primary{background:var(--primary); border-color:var(--primary);}
-.small-muted{color:var(--muted); font-size:0.9rem;}
-@media (max-width:767px){
-  .hero{height:220px; padding:20px;}
-  .card-img-top{height:160px;}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #0d6efd !important;
+}
+
+.dropdown-menu {
+    border-radius: 12px;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.dropdown-item {
+    border-radius: 8px;
+    padding: 8px 14px;
+    transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f6ff;
+    color: #0d6efd;
+}
+/* ===== FOOTER ===== */
+.footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.footer h6 {
+    color: #212529;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-link {
+    color: #555;
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--bs-primary);
+    transform: translateX(4px);
+}
+
+/* Mạng xã hội */
+.social-link {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #ddd;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: var(--bs-primary);
+    color: #fff;
+    border-color: var(--bs-primary);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .footer .col-md-4,
+    .footer .col-md-2 {
+        text-align: center;
+    }
+    .social-link {
+        margin: 4px;
+    }
 }
