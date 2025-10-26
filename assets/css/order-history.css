@@ -1,0 +1,47 @@
+.box{   
+    margin-top:20px ;   
+    box-shadow: 0px 0px 5px black;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;    
+}
+.banner{
+    background-color: white;
+    padding: 20px;
+}
+.banner .banner-title{
+    display: flex;
+    align-items: center;
+}   
+.title{
+   margin-left: 10px;
+  
+}
+.banner-title, .detail{
+    width: 400px;
+}
+.search{
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.filter{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.dropdown-filter{   
+    margin-top: 15px;
+    margin-left: -15px;
+    width: 150px;
+    border: 2px solid black;    
+    padding: 5px;
+    border-radius: 10px ;
+}
+.input-search{
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 35px;
+}
