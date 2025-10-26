@@ -8,33 +8,37 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="assets/css/techx-home.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
-<!-- Header (giữ nguyên) -->
-<!<!-- ================= Header ================= -->
-<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+<!-- ================= Header ================= -->
+<header class="navbar navbar-expand-lg bg-white shadow-sm sticky-top header-main py-2">
     <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand fw-bold text-primary" href="/index.html">
-            <i class="bi bi-camera me-2">TechX</i>
+        <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="/index.html">
+            <i class="bi bi-camera fs-4 me-2"></i>
+            <span>TechX</span>
         </a>
 
-        <!-- Toggle button cho mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <!-- Toggle (mobile) -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list fs-2 text-primary"></i>
         </button>
 
-        <!-- Navbar links -->
+        <!-- Nav links -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="/index.html">Trang chủ</a></li>
+            <ul class="navbar-nav align-items-lg-center gap-lg-3">
+                <li class="nav-item"><a class="nav-link active" href="/index.html">Trang chủ</a></li>
                 <li class="nav-item"><a class="nav-link" href="/pages/shop.html">Cửa hàng</a></li>
 
-                <!-- Dropdown Sản phẩm -->
+                <!-- Dropdown -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/pages/products.html" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Sản phẩm
+                    </a>
                     <ul class="dropdown-menu border-0 shadow rounded-3" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="/pages/products.html">Tất cả sản phẩm</a></li>
                         <li><hr class="dropdown-divider"></li>
@@ -51,19 +55,19 @@
                 <li class="nav-item"><a class="nav-link" href="/pages/profile.html">Tài khoản</a></li>
             </ul>
 
-            <!-- Nút login và giỏ hàng -->
+            <!-- Login & Cart -->
             <div class="ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center gap-2">
-                <a href="/pages/login.html" class="btn btn-outline-primary btn-sm px-3">
-                    <i class="bi bi-box-arrow-in-right me-1"></i>Đăng nhập
+                <a href="/pages/login.html" class="btn btn-outline-primary btn-sm d-flex align-items-center">
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Đăng nhập
                 </a>
-                <a href="/pages/cart.html" class="btn btn-primary btn-sm px-3">
-                    <i class="bi bi-cart3 me-1"></i>Giỏ hàng
+                <a href="/pages/cart.html" class="btn btn-primary btn-sm d-flex align-items-center">
+                    <i class="bi bi-cart3 me-1"></i> Giỏ hàng
                 </a>
             </div>
         </div>
     </div>
 </header>
-<!-- === Header của bạn đặt ở đây === -->
+
 
 <!-- Hero Slider -->
 <section id="heroSlider" class="carousel slide" data-bs-ride="carousel">
