@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ưu đãi đặc biệt - TechX</title>
+
+    <!-- ✅ Bootstrap & Icons (giúp menu hoạt động ngang) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- ✅ CSS riêng -->
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/shop.css" />
+
+    <!-- ================= IMAGE SOURCES ================= -->
+    <script>
+        const IMG = {
+            /* HERO + OFFER (tỉ lệ landscape ~1200x600) */
+            OFFER_GALAXY: "/assets/img/Banner/bn1.jpg",
+            OFFER_TV: "/assets/img/Banner/bn2.png",
+            OFFER_HOME: "/assets/img/Banner/bn3.png",
+
+            /* PRODUCT (thumbnail ~172x172) */
+            GALAXY_A56: "https://images.samsung.com/is/image/samsung/p6pim/vn/2401/gallery/vn-galaxy-a56-5g-sm-a565fzkdxxv-thumb-538511501?$172_172_PNG$",
+            GALAXY_FIT3: "https://images.samsung.com/is/image/samsung/p6pim/vn/2401/gallery/vn-fit3-sm-r390nzkaxxv-thumb-538517145?$172_172_PNG$",
+            FRIDGE_AI: "https://images.samsung.com/is/image/samsung/p6pim/vn/2401/gallery/vn-rs62r5001b4-tc-thumb-538527502?$172_172_PNG$",
+            FRIDGE_RS64: "https://images.samsung.com/is/image/samsung/p6pim/vn/2401/gallery/vn-rs64r5331b4-tc-thumb-538527505?$172_172_PNG$",
+            Z_FLIP5: "https://images.samsung.com/is/image/samsung/p6pim/vn/2401/gallery/vn-galaxy-z-flip5-thumb-538510900?$172_172_PNG$",
+            // === CATEGORY PRODUCTS ===
+            GALAXY_S25: "/assets/img/pr/maygiatai.jpg",
+            GALAXY_S25_ULTRA: "/assets/img/pr/maygiatai.jpg",
+            TV_OLED: "/assets/img/products/maygiatai.jpg",
+            MAY_GIAT_AI: "/assets/img/pr/pr1.jpg",
+            GALAXY_BOOK4: "/assets/img/Banner/tivi.jpg",
+            WATCH8: "/assets/img/Banner/bn3.png",
+            SAC_DOI: ""
+        };
+
+    </script>
+
+</head>
+
+<body>
+    <!-- ================= HEADER ================= -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <!-- ✅ Logo chuẩn -->
+            <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="/index.html">
+                <i class="bi bi-camera fs-4 me-2"></i> TechX
+            </a>
+
+            <!-- ✅ Nút toggle cho mobile -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2 text-primary"></i>
+            </button>
+
+            <!-- ✅ Menu chính -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/pages/shop.html">Cửa hàng</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+                        <ul class="dropdown-menu border-0 shadow rounded-3" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/pages/products.html">Tất cả sản phẩm</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/pages/products.html#mini-tech">Công nghệ mini</a></li>
+                            <li><a class="dropdown-item" href="/pages/products.html#ai-device">Thiết bị AI</a></li>
+                            <li><a class="dropdown-item" href="/pages/products.html#creative">Phụ kiện sáng tạo</a></li>
+                            <li><a class="dropdown-item" href="/pages/products.html#fun-tech">Đồ chơi công nghệ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/order-history.html">Đơn hàng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/profile.html">Tài khoản</a></li>
+                </ul>
+
+                <!-- ✅ Nút đăng nhập + giỏ hàng -->
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center gap-2">
+                    <a href="/pages/login.html" class="btn btn-outline-primary btn-sm px-3">
+                        <i class="bi bi-box-arrow-in-right me-1"></i>Đăng nhập
+                    </a>
+                    <a href="/pages/cart.html" class="btn btn-primary btn-sm px-3">
+                        <i class="bi bi-cart3 me-1"></i>Giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Lựa chọn tối ưu chuẩn sống của bạn</h1>
+        </div>
+    </section>
+
+    <!-- ================= CATEGORY NAV ================= -->
+    <section class="categories">
+        <div class="category-item active" data-category="featured">
+            <div class="icon">⭐</div>
+            <p>Mới & Nổi bật</p>
+        </div>
+        <div class="category-item" data-category="mobile">
+            <div class="icon">📱</div>
+            <p>Di động</p>
+        </div>
+        <div class="category-item" data-category="tv">
+            <div class="icon">📺</div>
+            <p>TV & AV</p>
+        </div>
+        <div class="category-item" data-category="home">
+            <div class="icon">🏠</div>
+            <p>Gia dụng</p>
+        </div>
+        <div class="category-item" data-category="it">
+            <div class="icon">💻</div>
+            <p>IT</p>
+        </div>
+        <div class="category-item" data-category="wearable">
+            <div class="icon">⌚</div>
+            <p>Thiết bị đeo</p>
+        </div>
+        <div class="category-item" data-category="accessory">
+            <div class="icon">🎧</div>
+            <p>Phụ kiện</p>
+        </div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="products">
+        <div class="product-list active" id="featured">
+            <div class="product-card">
+                <img src="" id="img-s25plus" alt="Galaxy S25+" />
+                <h3>Galaxy S25+</h3>
+                <p>29.935.637 VND</p>
+            </div>
+            <div class="product-card">
+                <img src="" id="img-maygiatai" alt="Máy giặt AI" />
+                <h3>Máy giặt AI</h3>
+                <p>18.990.000 VND</p>
+            </div>
+            <div class="product-card">
+                <img src="" id="img-tvu4k" alt="TV 4K UHD" />
+                <h3>TV 4K UHD</h3>
+                <p>12.990.000 VND</p>
+            </div>
+        </div>
+
+        <div class="product-list" id="mobile">
+            <div class="product-card">
+                <img src="" id="img-s25" alt="Galaxy S25" />
+                <h3>Galaxy S25</h3>
+                <p>22.572.000 VND</p>
+            </div>
+            <div class="product-card">
+                <img src="" id="img-s25ultra" alt="Galaxy S25 Ultra" />
+                <h3>Galaxy S25 Ultra</h3>
+                <p>33.372.000 VND</p>
+            </div>
+        </div>
+
+        <div class="product-list" id="tv">
+            <div class="product-card">
+                <img src="" id="img-tv-oled" alt="77 Inch OLED S90F" />
+                <h3>77 Inch OLED S90F</h3>
+                <p>49.990.000 VND</p>
+            </div>
+        </div>
+
+        <div class="product-list" id="home">
+            <div class="product-card">
+                <img src="" id="img-may-giat-ai" alt="Máy giặt AI Bespoke" />
+                <h3>Máy giặt AI Bespoke</h3>
+                <p>18.900.000 VND</p>
+            </div>
+        </div>
+
+        <div class="product-list" id="it">
+            <div class="product-card">
+                <img src="" id="img-galaxy-book4" alt="Galaxy Book4" />
+                <h3>Galaxy Book4</h3>
+                <p>25.000.000 VND</p>
+            </div>
+        </div>
+
+        <div class="product-list" id="wearable">
+            <div class="product-card">
+                <img src="" id="img-watch8" alt="Galaxy Watch 8" />
+                <h3>Galaxy Watch 8</h3>
+                <p>9.000.000 VND</p>
+            </div>
+        </div>
+
+        <div class="product-list" id="accessory">
+            <div class="product-card">
+                <img src="" id="img-sac-doi" alt="Sạc đôi không dây" />
+                <h3>Sạc đôi không dây</h3>
+                <p>1.490.000 VND</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= OFFER GRID ================= -->
+    <section class="offers">
+        <div class="offer left">
+            <img id="offer-galaxy" alt="Galaxy Offer" />
+            <div class="offer-text">
+                <h2>Khám phá dòng Galaxy S mới</h2>
+                <p>Nhận ngay ưu đãi hấp dẫn khi đặt trước Galaxy S24</p>
+                <button class="btn-ghost">Xem chi tiết</button>
+            </div>
+        </div>
+
+        <div class="offer right">
+            <div class="offer-text">
+                <h2>Ưu đãi Smart TV</h2>
+                <p>Tận hưởng hình ảnh sống động và âm thanh vượt trội</p>
+                <button class="btn-ghost">Xem chi tiết</button>
+            </div>
+            <img id="offer-tv" alt="TV Offer" />
+        </div>
+
+        <div class="offer left">
+            <img id="offer-home" alt="Home Offer" />
+            <div class="offer-text">
+                <h2>Thiết bị gia dụng thông minh</h2>
+                <p>Biến ngôi nhà bạn trở nên hiện đại và tiện nghi hơn</p>
+                <button class="btn-ghost">Xem chi tiết</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= RECOMMENDED CAROUSEL ================= -->
+    <section class="recommended container my-5">
+        <h2 class="fw-bold mb-4 text-center">Được đề xuất cho bạn</h2>
+
+        <div class="carousel-wrapper position-relative">
+            <!-- Nút điều hướng -->
+            <button class="carousel-btn prev"><i class="bi bi-chevron-left"></i></button>
+            <button class="carousel-btn next"><i class="bi bi-chevron-right"></i></button>
+
+            <!-- Vùng chứa sản phẩm -->
+            <div class="carousel-track d-flex">
+                <div class="product-card text-center p-3 shadow-sm rounded-4 bg-white">
+                    <img id="img-a56" class="img-fluid mb-3 rounded-3">
+                    <h6 class="fw-semibold">Galaxy A56 5G</h6>
+                    <p class="fw-bold text-dark mb-1">11.469.000 VND</p>
+                    <p class="text-primary small mb-0">chiết khấu 303.000 VND <span
+                            class="text-muted">(11.772.000)</span></p>
+                </div>
+
+                <div class="product-card text-center p-3 shadow-sm rounded-4 bg-white">
+                    <img id="img-fit3" class="img-fluid mb-3 rounded-3">
+                    <h6 class="fw-semibold">Galaxy Fit3</h6>
+                    <p class="fw-bold text-dark mb-1">959.000 VND</p>
+                    <p class="text-primary small mb-0">chiết khấu 405.727 VND <span
+                            class="text-muted">(1.364.727)</span></p>
+                </div>
+
+                <div class="product-card text-center p-3 shadow-sm rounded-4 bg-white">
+                    <img id="img-fridge-ai" class="img-fluid mb-3 rounded-3">
+                    <h6 class="fw-semibold">Tủ Lạnh Bespoke AI</h6>
+                    <p class="fw-bold text-dark mb-1">19.390.000 VND</p>
+                    <p class="text-primary small mb-0">chiết khấu 5.047.160 VND <span
+                            class="text-muted">(24.437.160)</span></p>
+                </div>
+
+                <div class="product-card text-center p-3 shadow-sm rounded-4 bg-white">
+                    <img id="img-fridge-rs64" class="img-fluid mb-3 rounded-3">
+                    <h6 class="fw-semibold">Tủ Lạnh Samsung RS64</h6>
+                    <p class="fw-bold text-dark mb-1">15.990.000 VND</p>
+                    <p class="text-primary small mb-0">chiết khấu 4.530.000 VND <span
+                            class="text-muted">(20.520.000)</span></p>
+                </div>
+
+                <div class="product-card text-center p-3 shadow-sm rounded-4 bg-white">
+                    <img id="img-zflip5" class="img-fluid mb-3 rounded-3">
+                    <h6 class="fw-semibold">Galaxy Z Flip5</h6>
+                    <p class="fw-bold text-dark mb-1">24.990.000 VND</p>
+                    <p class="text-primary small mb-0">chiết khấu 3.000.000 VND <span
+                            class="text-muted">(27.990.000)</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= Footer ================= -->
+    <footer class="footer bg-light text-dark pt-5 pb-4 mt-5 border-top">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Logo + Giới thiệu -->
+                <div class="col-md-4">
+                    <a href="/index.html" class="d-flex align-items-center mb-3 text-decoration-none">
+                        <i class="bi bi-camera fs-3 text-primary me-2"></i>
+                        <span class="fw-bold fs-5 text-primary">TechX</span>
+                    </a>
+                    <p class="text-muted">
+                        Nơi bạn tìm thấy những thiết bị công nghệ độc đáo, hiện đại và sáng tạo.
+                        Chúng tôi mang đến trải nghiệm mua sắm tiện lợi và đáng tin cậy.
+                    </p>
+                </div>
+
+                <!-- Danh mục -->
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3 text-uppercase">Danh mục</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/products.html#mini-tech" class="footer-link">Công nghệ mini</a></li>
+                        <li><a href="/pages/products.html#ai-device" class="footer-link">Thiết bị AI</a></li>
+                        <li><a href="/pages/products.html#creative" class="footer-link">Phụ kiện sáng tạo</a></li>
+                        <li><a href="/pages/products.html#fun-tech" class="footer-link">Đồ chơi công nghệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hỗ trợ -->
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3 text-uppercase">Hỗ trợ</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/contact.html" class="footer-link">Liên hệ</a></li>
+                        <li><a href="/pages/forgot-password.html" class="footer-link">Quên mật khẩu</a></li>
+                        <li><a href="/pages/order-history.html" class="footer-link">Theo dõi đơn hàng</a></li>
+                        <li><a href="/pages/404.html" class="footer-link">Trung tâm trợ giúp</a></li>
+                    </ul>
+                </div>
+
+                <!-- Liên hệ -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3 text-uppercase">Liên hệ</h6>
+                    <p class="mb-1"><i class="bi bi-geo-alt-fill text-primary me-2"></i>123 Nguyễn Huệ, TP. Hồ Chí Minh
+                    </p>
+                    <p class="mb-1"><i class="bi bi-telephone-fill text-primary me-2"></i>+84 987 654 321</p>
+                    <p><i class="bi bi-envelope-fill text-primary me-2"></i>support@htcamera.vn</p>
+                    <div class="mt-3">
+                        <a href="#" class="social-link me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link me-2"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3">
+            <div class="text-center small text-muted">
+                © 2025 <strong>TechX</strong>. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- ✅ Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/shop.js"></script>
+    <script>
+        // ===== Gán ảnh cho phần OFFER =====
+        document.getElementById("offer-galaxy").src = IMG.OFFER_GALAXY;
+        document.getElementById("offer-tv").src = IMG.OFFER_TV;
+        document.getElementById("offer-home").src = IMG.OFFER_HOME;
+        // Gán ảnh CATEGORY PRODUCTS
+        document.getElementById("img-s25plus").src = IMG.GALAXY_S25_ULTRA; // ví dụ
+        document.getElementById("img-maygiatai").src = IMG.MAY_GIAT_AI;
+        document.getElementById("img-tvu4k").src = IMG.TV_OLED;
+        document.getElementById("img-s25").src = IMG.GALAXY_S25;
+        document.getElementById("img-s25ultra").src = IMG.GALAXY_S25_ULTRA;
+        document.getElementById("img-may-giat-ai").src = IMG.MAY_GIAT_AI;
+        document.getElementById("img-galaxy-book4").src = IMG.GALAXY_BOOK4;
+        document.getElementById("img-watch8").src = IMG.WATCH8;
+        document.getElementById("img-sac-doi").src = IMG.SAC_DOI;
+        // ===== Gán ảnh cho sản phẩm RECOMMENDED =====
+        document.getElementById("img-a56").src = IMG.GALAXY_A56;
+        document.getElementById("img-fit3").src = IMG.GALAXY_FIT3;
+        document.getElementById("img-fridge-ai").src = IMG.FRIDGE_AI;
+        document.getElementById("img-fridge-rs64").src = IMG.FRIDGE_RS64;
+        document.getElementById("img-zflip5").src = IMG.Z_FLIP5;
+    </script>
+</body>
+
+
+
+</html>
