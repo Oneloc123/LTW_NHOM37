@@ -79,13 +79,26 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: #f7f7f7;
+  overflow-x: hidden; /* tránh tràn ngang toàn trang */
 }
 
 .product-list {
   display: none;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap; /* ❌ Không cho xuống hàng */
+  justify-content: flex-start;
   gap: 20px;
+  overflow-x: auto; /* ✅ Cuộn ngang khi quá nhiều sản phẩm */
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.product-list::-webkit-scrollbar {
+  height: 8px; /* nhỏ gọn */
+}
+
+.product-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
 }
 
 .product-list.active {
@@ -93,6 +106,7 @@ body {
 }
 
 .product-card {
+  flex: 0 0 auto; /* ✅ Giữ kích thước cố định khi cuộn ngang */
   background: white;
   border-radius: 14px;
   width: 250px;
@@ -109,12 +123,11 @@ body {
 
 .product-card img {
   width: 100%;
-  height: 220px; /* hoặc 250px tùy layout */
-  object-fit: cover; /* ảnh tự cắt để vừa khung */
+  height: 220px;
+  object-fit: cover;
   border-radius: 12px;
   display: block;
 }
-
 
 .product-card h3 {
   font-size: 16px;
@@ -126,6 +139,7 @@ body {
   font-weight: 500;
   color: #111;
 }
+
 
 /* ================= OFFER SECTIONS ================= */
 .offers {
