@@ -38,7 +38,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 18px;
-  padding: 40px 10px;
+  padding: 40px 10px 20px;
 }
 
 .category-item {
@@ -75,9 +75,9 @@ body {
 
 /* PRODUCTS */
 .products {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0 40px ;
   background-color: #f7f7f7;
   overflow-x: hidden; /* tránh tràn ngang toàn trang */
 }
@@ -89,6 +89,7 @@ body {
   gap: 20px;
   overflow-x: auto; /* ✅ Cuộn ngang khi quá nhiều sản phẩm */
   scroll-behavior: smooth;
+  padding-top : 10px ;
   padding-bottom: 10px;
 }
 
