@@ -5,43 +5,101 @@
     border-width: 1px;
     border-radius: 20px;
     border-style: solid;    
+    padding: 20px;
+   
 }
 .banner{
     background-color: white;
-    padding: 20px;
 }
 .banner .banner-title{
     display: flex;
     align-items: center;
 }   
-.title{
-   margin-left: 10px;
-  
-}
 .banner-title, .detail{
     width: 400px;
 }
 .search{
     background-color: white;
-    padding: 5px;
     display: flex;
     align-items: center;
 }
 .filter{
-    list-style: none;
+    list-style: none;   
     display: flex;
+    padding: 0px;
+    margin-bottom: 0px;
     align-items: center;
 }
-.dropdown-filter{   
-    margin-top: 15px;
-    margin-left: -15px;
-    width: 150px;
-    border: 2px solid black;    
-    padding: 5px;
-    border-radius: 10px ;
+#status-filter{
+    padding: 0px;   
 }
-.input-search{
-    margin-top: 15px;
+#searchOrder{
+    margin-left: 15px;
+}
+
+.top-order{
+    position: relative;
+}
+.order-id{  
+    font-size: 30px;
+}
+.states-order{
+    position: absolute;
+    right: 10px;
+    top:5px;
+    background-color:  rgb(68, 238, 210);
+    width: 120px;
+    border-radius: 10px;
+}
+.states-order-text{
+    margin-left: 16px;
+    margin-top: 10px;
+}
+.item{
+    background-color: rgb(197, 243, 241);
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;  
+    position: relative;
+    margin: 10px;
+}
+.img-item{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: 1px black;
+    background-color: rgb(103, 144, 155);
+}
+.product-title{
+    padding-top: 10px;
+}
+.item-value{    
+    position: absolute;
+    right: 30px;
+    top:40px;
+}
+.bottom-order{
+    display: flex;
+    justify-content: space-between;
+}   
+.btn-item{
+    display: flex;
+}
+.btn-item-bot{
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.btn-detail{   
+    background-color: rgb(84, 159, 230);
+    margin: 0;
+}
+.btn-buy-again{ 
     margin-left: 20px;
-    height: 35px;
+    margin-right: 10px;
+    background-color: rgb(180, 216, 218);
+    margin-bottom: 0px;
 }
+

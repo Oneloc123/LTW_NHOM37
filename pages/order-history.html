@@ -84,26 +84,91 @@
             </div>
             <div class="search box">
                 <ul class="filter">
-                    <li class="nav-item dropdown dropdown-filter ">
-                        <a class="nav-link dropdown-toggle dropdown-toggle-filter " href="#" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            tất cả trạng thái
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow rounded-3" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/pages/products.html">Tất cả trạng thái</a></li>
-                            <li><a class="dropdown-item" href="/pages/products.html#mini-tech">Đang xử lý</a></li>
-                            <li><a class="dropdown-item" href="/pages/products.html#ai-device">Dang giao</a></li>
-                            <li><a class="dropdown-item" href="/pages/products.html#creative">Hoàn thành</a></li>
-                            <li><a class="dropdown-item" href="/pages/products.html#fun-tech">Đã huỷ</a></li>
-                        </ul>
+                    <li class="item-filter">
+                        <select id="statusFilter">
+                            <option value="all">Tất cả trạng thái</option>
+                            <option value="processing">Đang xử lý</option>
+                            <option value="shipping">Đang giao</option>
+                            <option value="completed">Hoàn thành</option>
+                            <option value="cancelled">Đã hủy</option>
+                        </select>
                     </li>
-                    <li>
-                        <input class="input-search" name="idOrder" placeholder="Tìm kiếm mã đơn hàng">
+                    <li class="item-filter">
+                        <input type="text" id="searchOrder" placeholder="Tìm kiếm mã đơn hàng...">
                     </li>
                 </ul>
             </div>
-            <div class="itemorder box">
-                    
+            <div class="itemOrder box">
+                <div class="top-order order-box">
+                    <h2 class="order-id">Đơn hàng #DH001</h2>
+                    <p>Ngày đặt: 25/10/2025</p>
+                    <div class="states-order">
+                        <p class="states-order-text">Hoàn thành</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="center-order order-box">
+                    <div class="item item1">
+                        <img class="img-item" src="" alt="sanPham">
+                        <div class="product-title">
+                            <h2>Máy tính bình dương</h2>
+                            <p>Số lượng: 2</p>
+                        </div>
+                        <h2 class="item-value">299.000đ</h2>
+                    </div>  
+                     <div class="item item2">
+                        <img class="img-item" src="" alt="sanPham">
+                        <div class="product-title">
+                            <h2>Xe máy bình dương</h2>
+                            <p>Số lượng: 1</p>
+                        </div>
+                        <h2 class="item-value">599.000đ</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom-order order-box">
+                    <h2>Tổng: 1.197.000đ</h2>
+                    <div class="btn-item">
+                        <p class="btn-item-bot btn-detail">Xem chi tiết</p>
+                        <p class="btn-item-bot btn-buy-again">Mua lại</p>
+                    </div>
+                </div>
+            </div>
+            <div class="itemOrder box">
+                <div class="top-order order-box">
+                    <h2 class="order-id">Đơn hàng #DH001</h2>
+                    <p>Ngày đặt: 25/10/2025</p>
+                    <div class="states-order">
+                        <p class="states-order-text">Hoàn thành</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="center-order order-box">
+                    <div class="item item1">
+                        <img class="img-item" src="" alt="sanPham">
+                        <div class="product-title">
+                            <h2>Máy tính bình dương</h2>
+                            <p>Số lượng: 2</p>
+                        </div>
+                        <h2 class="item-value">299.000đ</h2>
+                    </div>  
+                     <div class="item item2">
+                        <img class="img-item" src="" alt="sanPham">
+                        <div class="product-title">
+                            <h2>Xe máy bình dương</h2>
+                            <p>Số lượng: 1</p>
+                        </div>
+                        <h2 class="item-value">599.000đ</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom-order order-box">
+                    <h2>Tổng: 1.197.000đ</h2>
+                    <div class="btn-item">
+                        <p class="btn-item-bot btn-detail">Xem chi tiết</p>
+                        <p class="btn-item-bot btn-buy-again">Mua lại</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
